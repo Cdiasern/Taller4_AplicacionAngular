@@ -16,4 +16,16 @@ table {
   
   mat-cell {
     text-align: center;
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .input-field {
+    flex: 1;
+    max-width: 300px;
   }  

@@ -1,10 +1,15 @@
-<h2>Verificar si una fecha es festiva</h2>
-<mat-form-field appearance="fill">
-  <mat-label>Fecha (dd/MM/yyyy)</mat-label>
-  <input matInput [(ngModel)]="date" placeholder="Ejemplo: 01/01/2024" />
-</mat-form-field>
-<br />
 <mat-card>
-  <button mat-raised-button color="primary" (click)="checkHoliday()">Verificar</button>
-</mat-card>
-<p *ngIf="result" class="mat-body-1">{{ result }}</p>
+    <mat-card-header>
+      <mat-card-title>Verificar si una Fecha es Festiva</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="input-group">
+        <mat-form-field appearance="fill" class="input-field">
+          <mat-label>Fecha (dd/MM/yyyy)</mat-label>
+          <input matInput [(ngModel)]="date" placeholder="Ejemplo: 01/01/2024" />
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="checkHoliday()">Verificar</button>
+      </div>
+      <p *ngIf="result" class="mat-body-1">{{ result }}</p>
+    </mat-card-content>
+  </mat-card>  
